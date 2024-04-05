@@ -1,0 +1,75 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{calligra}
+\usepackage[T1]{fontenc}
+
+\geometry{top=2.0cm, bottom=2.0cm, left=2.0cm, right=2.0cm, landscape}
+
+% Define a purple border for the certificate
+\definecolor{mypurple}{rgb}{0.5,0,0.5}
+\newcommand{\border}{
+  \begin{center}
+    \color{mypurple}
+    \rule{\textwidth}{2px}
+  \end{center}
+}
+
+\begin{document}
+\pagestyle{empty}
+
+% Add the border
+\border
+
+\begin{center}
+  % Insert the logo
+  \includegraphics[width=6cm]{fosforums.png}
+  
+  % Title
+  {\LARGE \bfseries Certificate of Participation}
+\end{center}
+
+\vspace{0.5cm}
+
+\begin{center}
+  This is to certify that
+  
+  \vspace{0.5cm}
+ 
+  {\Large \calligra \textcolor{mypurple}{[Name of the Speaker]}} % Name of speaker
+  
+  \vspace{0.5cm}
+  
+  has successfully participated in
+  
+  \vspace{0.5cm}
+
+  {\Large \bfseries FOSForums} \\ % Name of the event
+  \vspace{0.5cm}
+  {\small \bfseries Held at the State University of Campinas on the 26th and 27th of August 2023} % Additional details
+
+  \vspace{0.5cm}
+
+  and presented a talk entitled
+
+  \vspace{0.5cm}
+
+  {\small \bfseries [Name of the Talk]} % Name of talk
+
+\end{center}
+
+\vspace{1cm}
+
+\begin{center}
+    \vspace{0.5cm}
+    
+    \rule{6cm}{0.4pt} \\
+    \textbf{FOSForums}
+  \end{center}
+
+% Add the border
+\border
+
+\end{document}

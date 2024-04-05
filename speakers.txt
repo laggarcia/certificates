@@ -1,0 +1,46 @@
+Open Hardware at the Sirius Light Source
+Daniel Tavares
+
+Open-source software at the Sirius light source
+Eduardo Pereira Coelho
+Henrique F. Simões
+
+Laboratório Hacker de Campinas
+Carlos Costa
+
+Lets talk about FreeBSD
+Renato Botelho do Couto
+
+To crash or not to crash: if you do, at least recover fast!
+Guilherme G. Piccoli
+
+Improving Linux for Real Time Workloads
+Leonardo Brás
+
+Sharing is caring: Collaborative testing in the open CI ecosystem
+Helen Koike
+
+Casting Spells: the magic behind screencasting on Linux
+Pedro Sader Azevedo
+
+Building the Future: Accelerating Digital Design with Open-Source EDA Tools
+Rafael Neves de Mello Oliveira
+
+Introduction to RISC-V
+Mikhail Y R Gadelha
+
+IoT Architecture in TinyML era.
+Eduardo dos Santos Pereira
+
+Malloc Adventures
+Luc Joffily Ribas
+
+Debian Image Generation for Single-Board Computers using DEBOS: Controlling Packages and Files
+Jadyla Cesario
+Pablo Santos
+
+Stateless decoders and the new AV1 kernel uAPI
+Daniel Almeida
+
+"I've moved on to other things. It's in good hands with everyone": How Bitcoin open source development works?
+Bruno Garcia
