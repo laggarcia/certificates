@@ -14,12 +14,11 @@
 
 import os
 from datetime import datetime
-from pylatex import Document, NewPage, NoEscape, Command
 
-# Read LaTeX template for certificates
+# Read LaTeX template for certificates of participation
 # This is a one-time operation, no need to read the template for every name
-with open("template.tex", "r") as f:
-    latex_template = f.read()
+with open("template-attendee.tex", "r") as f:
+    latex_template_attendee = f.read()
 
 def generate_pdf(name):
     """
@@ -30,7 +29,7 @@ def generate_pdf(name):
 
     """
     # Replace the placeholder in the template with the actual name
-    latex_code = latex_template.replace("[Name of the Attendee]", name)
+    latex_code = latex_template_attendee.replace("[Name of the Attendee]", name)
     
     # Write the modified LaTeX code to a temporary .tex file
     with open("temp.tex", "w") as f:
@@ -46,15 +45,15 @@ def generate_pdf(name):
     # Rename the generated PDF file to include the attendee name and timestamp
     os.rename("temp.pdf", f"{name}_certificate_{timestamp}.pdf")
 
-# Read names from a file
+# Read attendee's names from a file
 # Assumes one name per line in the file
-with open("names.txt", "r") as f:
-    names = f.readlines()
+with open("attendees.txt", "r") as f:
+    attendees = f.readlines()
 
 # Loop through each name and generate a PDF certificate
-for name in names:
-    name = name.strip()  # Remove any leading/trailing whitespace or newline characters
-    generate_pdf(name)  # Call the function to generate PDF
+for attendee in attendees:
+    attendee = attendee.strip()  # Remove any leading/trailing whitespace or newline characters
+    generate_pdf(attendee)  # Call the function to generate PDF
 
 # Cleanup: Remove temporary files generated during PDF creation
 os.remove("temp.tex")
